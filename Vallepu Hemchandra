@@ -1,0 +1,3 @@
+DL Models Proposed in this work
+Inc-Pix2Pix (Inception Pix2Pix) : Traditional Pix2Pix Network with the benifits of Inception Network running parallel to Generator (U-Net) of the GAN
+RNX-Pix2Pix (ResNext Pix2Pix) : Traditional Pix2Pix Network with the benifits of ResNext blocks in the bottle next of Generator (Encoder-Decoder) of the GAN
