@@ -7,6 +7,108 @@ Remote Sensing (RS) is the process of observing and measuring the physical featu
 - **Inc-Pix2Pix (Inception Pix2Pix)** : Traditional Pix2Pix Network with the benifits of Inception Network running parallel to Generator (U-Net) of the GAN
 - **RNX-Pix2Pix (ResNext Pix2Pix)** : Traditional Pix2Pix Network with the benifits of ResNext blocks in the bottle next of Generator (Encoder-Decoder) of the GAN
 
+### Results
+
+<table>
+    <tr>
+        <th rowspan=2>Model</th>
+        <th colspan=2>Thin Haze</th>
+        <th colspan=2>Moderate Haze</th>
+        <th colspan=2>Thick Haze</th>
+    </tr>
+    <tr>
+        <th>SSIM</th>
+        <th>PSNR</th>
+        <th>SSIM</th>
+        <th>PSNR</th>
+        <th>SSIM</th>
+        <th>PSNR</th>
+    </tr>
+    <tr>
+        <td>DCP</td>
+        <td>0.724</td>
+        <td>12.77</td>
+        <td>0.573</td>
+        <td>9.78</td>
+        <td>0.585</td>
+        <td>8.58</td>
+    </tr>
+    <tr>
+        <td>DehazeNet</td>
+        <td>0.895</td>
+        <td>19.75</td>
+        <td>0.855</td>
+        <td>18.12</td>
+        <td>0.706</td>
+        <td>14.33</td>
+    </tr>
+    <tr>
+        <td>SAR-OPT-CGAN</td>
+        <td>0.841</td>
+        <td>20.19</td>
+        <td>0.794</td>
+        <td>21.66</td>
+        <td>0.757</td>
+        <td>19.65</td>
+    </tr>
+    <tr>
+        <td>B.Huang</td>
+        <td>0.906</td>
+        <td>24.16</td>
+        <td>0.926</td>
+        <td>25.31</td>
+        <td>0.864</td>
+        <td>25.07</td>
+    </tr>
+    <tr>
+        <td>SkyGAN</td>
+        <td>0.924</td>
+        <td>25.38</td>
+        <td>0.903</td>
+        <td>25.58</td>
+        <td>0.892</td>
+        <td>23.43</td>
+    </tr>
+    <tr>
+        <td>H2RL-Net</td>
+        <td>0.929</td>
+        <td>25.84</td>
+        <td>0.928</td>
+        <td>26.15</td>
+        <td>0.901</td>
+        <td>25.2</td>
+    </tr>
+    <tr>
+        <td>Mo-GAN</td>
+        <td>0.926</td>
+        <td>25.47</td>
+        <td>0.9176</td>
+        <td>25.93</td>
+        <td>0.899</td>
+        <td>25.12</td>
+    </tr>
+    <tr>
+        <td><b>RNX-Pix2Pix</b></td>
+        <td>0.921</td>
+        <td>22.27</td>
+        <td>0.928</td>
+        <td>23.01</td>
+        <td>0.89</td>
+        <td>21.46</td>
+    </tr>
+    <tr>
+        <td><b>INC-Pix2Pix</b></td>
+        <td>0.954</td>
+        <td>25.55</td>
+        <td>0.949</td>
+        <td>26.25</td>
+        <td>0.917</td>
+        <td>23.33</td>
+    </tr>
+</table>
+
+**Note:** Our Novel approaches have outperformed existing models.
+
 ### Other possible Approaches
-- Due to Lack of Computation time cycle Gan models have been less emphasized
+- Due to Lack of Computation time cycle Gan models have been less emphasized though implemented.
 - **RNX-CycleGAN** : In the traditional CycleGAN instead of the normal residual blocks resnext blocks have been used.
